@@ -1,0 +1,111 @@
+{
+ "allow_copy": 0, 
+ "allow_import": 1, 
+ "allow_rename": 1, 
+ "autoname": "field:attribute_name", 
+ "beta": 0, 
+ "creation": "2014-09-26 03:49:54.899170", 
+ "custom": 0, 
+ "docstatus": 0, 
+ "doctype": "DocType", 
+ "document_type": "Setup", 
+ "editable_grid": 1, 
+ "fields": [
+  {
+   "fieldname": "attribute_name", 
+   "fieldtype": "Data", 
+   "in_list_view": 1, 
+   "label": "Attribute Name", 
+   "reqd": 1
+  }, 
+  {
+   "default": "0", 
+   "fieldname": "numeric_values", 
+   "fieldtype": "Check", 
+   "label": "Numeric Values"
+  }, 
+  {
+   "depends_on": "numeric_values", 
+   "fieldname": "section_break_4", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "fieldname": "from_range", 
+   "fieldtype": "Float", 
+   "label": "From Range"
+  }, 
+  {
+   "fieldname": "increment", 
+   "fieldtype": "Float", 
+   "label": "Increment"
+  }, 
+  {
+   "fieldname": "column_break_8", 
+   "fieldtype": "Column Break"
+  }, 
+  {
+   "fieldname": "to_range", 
+   "fieldtype": "Float", 
+   "label": "To Range"
+  }, 
+  {
+   "depends_on": "eval: !doc.numeric_values", 
+   "fieldname": "section_break_5", 
+   "fieldtype": "Section Break"
+  }, 
+  {
+   "fieldname": "item_attribute_values", 
+   "fieldtype": "Table", 
+   "label": "Item Attribute Values", 
+   "options": "Item Attribute Value"
+  }
+ ], 
+ "hide_heading": 0, 
+ "hide_toolbar": 0, 
+<<<<<<< HEAD
+ "icon": "icon-edit", 
+ "idx": 0, 
+ "image_view": 0, 
+=======
+ "icon": "fa fa-edit", 
+>>>>>>> 27334c28a984f79d303c8fe2aee9120de89235a6
+ "in_create": 0, 
+ "in_dialog": 0, 
+ "is_submittable": 0, 
+ "issingle": 0, 
+ "istable": 0, 
+ "max_attachments": 0, 
+ "modified": "2016-08-14 16:35:45.358492", 
+ "modified_by": "avantika@aceid.ae", 
+ "module": "Stock", 
+ "name": "Item Attribute", 
+ "name_case": "", 
+ "owner": "Administrator", 
+ "permissions": [
+  {
+   "email": 1, 
+   "export": 1, 
+   "print": 1, 
+   "read": 1, 
+   "report": 1, 
+   "role": "Item User", 
+   "share": 1, 
+   "write": 1
+  }, 
+  {
+   "create": 1, 
+   "delete": 1, 
+   "read": 1, 
+   "report": 1, 
+   "role": "Item Manager", 
+   "share": 1, 
+   "write": 1
+  }
+ ], 
+ "quick_entry": 1, 
+ "read_only": 0, 
+ "read_only_onload": 0, 
+ "sort_field": "modified", 
+ "sort_order": "DESC", 
+ "track_seen": 0
+}
